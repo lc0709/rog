@@ -19,7 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "kr.doiche.rog.RogMod"
+    ],
+    "client": [
+      "kr.doiche.rog.RogModClient"
     ]
   },
   "mixins": [
