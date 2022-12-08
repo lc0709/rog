@@ -1,5 +1,6 @@
 package kr.doiche.rog;
 
+import kr.doiche.rog.item.RogItems;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
 import org.slf4j.Logger;
@@ -13,5 +14,6 @@ public class RogMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
+		RogItems.registerItems();
 	}
 }
