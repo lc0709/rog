@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class RogItemgroups {
-    public static final ItemGroup ROG = FabricItemGroupBuilder
-            .build(new Identifier(RogMod.MOD_ID, "ore"), () -> new ItemStack(RogItems.ORE));
+    public static final ItemGroup ROG = FabricItemGroupBuilder.build(
+            new Identifier(RogMod.MOD_ID, "ore"),
+            () -> new ItemStack(RogItems.ORE)
+    );
 }

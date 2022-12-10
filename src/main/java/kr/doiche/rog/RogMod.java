@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 public class RogMod implements ModInitializer {
 	public static final String MOD_ID = "rog";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static Item ROG_ITEM;
 
 	@Override
 	public void onInitialize() {
