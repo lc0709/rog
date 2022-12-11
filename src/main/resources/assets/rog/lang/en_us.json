@@ -1,6 +1,6 @@
 {
-  "item.rog.raw_ore_item": "Raw Ore",
-  "item.rog.ore": "Ore",
+  "item.rog.rog_ore_item": "Rog Ore Item",
+  "item.rog.rog_ore": "Rog Ore",
 
   "block.rog.rog_block": "Rog Block",
   "block.rog.rog_ore_block": "Rog Ore Block",

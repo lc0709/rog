@@ -12,12 +12,12 @@ public class RogItems{
             "rog_item",
             new Item(new FabricItemSettings().group(RogItemgroups.ROG))
     );
-    public static final Item RAW_ORE_ITEM = registerItem(
-            "raw_ore_item",
+    public static final Item ROG_ORE_ITEM = registerItem(
+            "rog_ore_item",
             new Item(new FabricItemSettings().group(RogItemgroups.ROG))
     );
-    public static final Item ORE = registerItem(
-            "ore",
+    public static final Item ROG_ORE = registerItem(
+            "rog_ore",
             new Item(new FabricItemSettings().group(RogItemgroups.ROG))
     );
 
