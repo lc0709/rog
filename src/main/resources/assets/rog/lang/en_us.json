@@ -2,5 +2,9 @@
   "item.rog.raw_ore_item": "Raw Ore",
   "item.rog.ore": "Ore",
 
+  "block.rog.rog_block": "Rog Block",
+  "block.rog.rog_ore_block": "Rog Ore Block",
+  "block.rog.deepslate_rog_ore_block": "Deepslate Rog Ore Block",
+
   "itemGroup.rog.ore": "Ore tab"
 }

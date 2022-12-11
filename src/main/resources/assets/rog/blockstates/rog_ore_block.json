@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "rog:block/rog_ore_block"}
+  }
+}
