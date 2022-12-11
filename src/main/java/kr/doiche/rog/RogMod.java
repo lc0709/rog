@@ -1,5 +1,6 @@
 package kr.doiche.rog;
 
+import kr.doiche.rog.block.RogBlocks;
 import kr.doiche.rog.item.RogItems;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
@@ -14,5 +15,6 @@ public class RogMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		RogItems.registerItems();
+		RogBlocks.registerBlocks();
 	}
 }

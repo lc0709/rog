@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "rog:item/raw_ore_item"
+    "layer0": "rog:item/rog_ore_item"
   }
 }

@@ -8,10 +8,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class RogItems{
-    public static final Item ROG_ITEM = registerItem(
-            "rog_item",
-            new Item(new FabricItemSettings().group(RogItemgroups.ROG))
-    );
     public static final Item ROG_ORE_ITEM = registerItem(
             "rog_ore_item",
             new Item(new FabricItemSettings().group(RogItemgroups.ROG))
