@@ -15,41 +15,32 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
 public class RogBlocks {
-    public static final Block ROG_BLOCK = registerBlock(
-            "rog_block",
-            new Block( FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().velocityMultiplier(2f) ),
-            RogItemgroups.ROG
+    public static final Block ROG_BLOCK = new Block(
+            FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().velocityMultiplier(2f)
+    );
+    public static final Block ROG_ORE_BLOCK = new OreBlock(
+            FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+            UniformIntProvider.create(3, 7)
+    );
+    public static final Block DEEPSLATE_ROG_ORE_BLOCK = new OreBlock(
+            FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
+            UniformIntProvider.create(3, 7)
     );
 
-    public static final Block ROG_ORE_BLOCK = registerBlock(
-            "rog_ore_block",
-            new OreBlock(
-                    FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3, 7)
-            ),
-            RogItemgroups.ROG
-    );
-
-    public static final Block DEEPSLATE_ROG_ORE_BLOCK = registerBlock(
-            "deepslate_rog_ore_block",
-            new OreBlock(
-                    FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-                    UniformIntProvider.create(3, 7)
-            ),
-            RogItemgroups.ROG
-    );
-
-    private static Block registerBlock(String name, Block block, ItemGroup tab){
-        registerBlockItem(name, block, tab);
-        return Registry.register(Registry.BLOCK, new Identifier(RogMod.MOD_ID, name), block);
+    static {
+        registerBlock("rog_block", ROG_BLOCK, RogItemgroups.ROG);
+        registerBlock("rog_ore_block", ROG_ORE_BLOCK, RogItemgroups.ROG);
+        registerBlock("deepslate_rog_ore_block", DEEPSLATE_ROG_ORE_BLOCK, RogItemgroups.ROG);
     }
 
-    private static Item registerBlockItem(String name, Block block, ItemGroup tab){
-        return Registry.register(
-                Registry.ITEM,
-                new Identifier(RogMod.MOD_ID, name),
-                new BlockItem(block, new FabricItemSettings().group(tab))
-        );
+    private static void registerBlock(String name, Block block, ItemGroup tab){
+        registerBlockItem(name, block, tab);
+        Registry.register(Registry.BLOCK, new Identifier(RogMod.MOD_ID, name), block);
+    }
+
+    private static void registerBlockItem(String name, Block block, ItemGroup tab){
+        BlockItem blockItem = new BlockItem(block, new FabricItemSettings().group(tab));
+        Registry.register(Registry.ITEM, new Identifier(RogMod.MOD_ID, name), blockItem);
     }
 
     public static void registerBlocks(){
