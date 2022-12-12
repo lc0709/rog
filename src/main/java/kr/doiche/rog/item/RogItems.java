@@ -1,7 +1,6 @@
 package kr.doiche.rog.item;
 
 import kr.doiche.rog.RogMod;
-import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;

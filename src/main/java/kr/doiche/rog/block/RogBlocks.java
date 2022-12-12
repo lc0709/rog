@@ -17,14 +17,14 @@ import net.minecraft.util.registry.Registry;
 public class RogBlocks {
     public static final Block ROG_BLOCK = registerBlock(
             "rog_block",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(4f).luminance(2).requiresTool()),
+            new Block( FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool() ),
             RogItemgroups.ROG
     );
 
     public static final Block ROG_ORE_BLOCK = registerBlock(
             "rog_ore_block",
             new OreBlock(
-                    FabricBlockSettings.of(Material.STONE).strength(4f).luminance(2).requiresTool(),
+                    FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)
             ),
             RogItemgroups.ROG
@@ -33,7 +33,7 @@ public class RogBlocks {
     public static final Block DEEPSLATE_ROG_ORE_BLOCK = registerBlock(
             "deepslate_rog_ore_block",
             new OreBlock(
-                    FabricBlockSettings.of(Material.STONE).strength(4f).luminance(2).requiresTool(),
+                    FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
                     UniformIntProvider.create(3, 7)
             ),
             RogItemgroups.ROG
