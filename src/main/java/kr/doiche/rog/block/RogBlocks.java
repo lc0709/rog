@@ -17,7 +17,7 @@ import net.minecraft.util.registry.Registry;
 public class RogBlocks {
     public static final Block ROG_BLOCK = registerBlock(
             "rog_block",
-            new Block( FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool() ),
+            new Block( FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().velocityMultiplier(2f) ),
             RogItemgroups.ROG
     );
 
