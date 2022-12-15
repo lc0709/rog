@@ -13,10 +13,11 @@ public class RogItems{
     public static final Item ROG_ITEM = new Item(settings.rarity(Rarity.EPIC));
     public static final Item ROG_ORE = new Item(settings.rarity(Rarity.EPIC));
     public static final Item EIGHT_BALL_ITEM = new EightBallItem(settings.maxCount(1));
+
     static {
         registerItem("rog_item", ROG_ITEM);
         registerItem("rog_ore", ROG_ORE);
-        registerItem("eight ball item", EIGHT_BALL_ITEM);
+        registerItem("eight_ball_item", EIGHT_BALL_ITEM);
     }
 
     private static void registerItem(String name, Item item){
