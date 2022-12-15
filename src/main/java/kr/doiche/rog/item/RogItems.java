@@ -9,11 +9,11 @@ import net.minecraft.util.registry.Registry;
 
 public class RogItems{
     private static final FabricItemSettings settings = new FabricItemSettings().group(RogItemgroups.ROG);
-    public static final Item ROG_ORE_ITEM = new Item(settings.rarity(Rarity.EPIC));
+    public static final Item ROG_ITEM = new Item(settings.rarity(Rarity.EPIC));
     public static final Item ROG_ORE = new Item(settings.rarity(Rarity.EPIC));
 
     static {
-        registerItem("rog_ore_item", ROG_ORE_ITEM);
+        registerItem("rog_item", ROG_ITEM);
         registerItem("rog_ore", ROG_ORE);
     }
 

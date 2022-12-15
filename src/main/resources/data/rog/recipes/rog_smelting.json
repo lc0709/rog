@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "group": "rog",
+  "ingredient": { "item": "rog:rog_ore" },
+  "result": "rog:rog_item"
+}

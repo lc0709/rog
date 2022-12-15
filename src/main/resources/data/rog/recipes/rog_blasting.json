@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 60,
+  "experience": 0.3,
+  "group": "rog",
+  "ingredient": { "item": "rog:rog_ore" },
+  "result": "rog:rog_item"
+}
