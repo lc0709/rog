@@ -15,17 +15,13 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.util.registry.Registry;
 
 public class RogBlocks {
-    public static final Block ROG_BLOCK = new Block(
-            FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().velocityMultiplier(2f)
-    );
-    public static final Block ROG_ORE_BLOCK = new OreBlock(
-            FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-            UniformIntProvider.create(3, 7)
-    );
-    public static final Block DEEPSLATE_ROG_ORE_BLOCK = new OreBlock(
-            FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(),
-            UniformIntProvider.create(3, 7)
-    );
+
+    private static final FabricBlockSettings metal = FabricBlockSettings.of(Material.METAL);
+    private static final FabricBlockSettings stone = FabricBlockSettings.of(Material.STONE);
+
+    public static final Block ROG_BLOCK = new Block(metal.strength(4f).requiresTool().velocityMultiplier(2f));
+    public static final Block ROG_ORE_BLOCK = new OreBlock(stone.strength(4f).requiresTool(), UniformIntProvider.create(3, 7));
+    public static final Block DEEPSLATE_ROG_ORE_BLOCK = new OreBlock(stone.strength(4f).requiresTool(), UniformIntProvider.create(3, 7));
 
     static {
         registerBlock("rog_block", ROG_BLOCK, RogItemgroups.ROG);
