@@ -6,7 +6,7 @@
     "###"
   ],
   "key": {
-    "#": { "item": "rog:rog_ore_item" }
+    "#": { "item": "rog:rog_item" }
   },
   "result": {
     "item": "rog:rog_block"
