@@ -19,7 +19,7 @@ public class RogBlocks {
     private static final FabricBlockSettings metal = FabricBlockSettings.of(Material.METAL);
     private static final FabricBlockSettings stone = FabricBlockSettings.of(Material.STONE);
 
-    public static final Block ROG_BLOCK = new Block(metal.strength(4f).requiresTool().velocityMultiplier(2f));
+    public static final Block ROG_BLOCK = new Block(metal.strength(4f).requiresTool());
     public static final Block ROG_ORE_BLOCK = new OreBlock(stone.strength(4f).requiresTool(), UniformIntProvider.create(3, 7));
     public static final Block DEEPSLATE_ROG_ORE_BLOCK = new OreBlock(stone.strength(4f).requiresTool(), UniformIntProvider.create(3, 7));
     public static final Block JUMP_BLOCK = new JumpBlock(metal.strength(2f).requiresTool());
