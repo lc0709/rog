@@ -6,6 +6,6 @@
   "block.rog.rog_block": "Rog Block",
   "block.rog.rog_ore_block": "Rog Ore Block",
   "block.rog.deepslate_rog_ore_block": "Deepslate Rog Ore Block",
-
+  "block.rog.jump_block": "Jump block",
   "itemGroup.rog.ore": "Ore tab"
 }

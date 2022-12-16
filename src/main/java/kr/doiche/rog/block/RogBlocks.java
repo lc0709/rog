@@ -1,6 +1,7 @@
 package kr.doiche.rog.block;
 
 import kr.doiche.rog.RogMod;
+import kr.doiche.rog.block.block.JumpBlock;
 import kr.doiche.rog.item.RogItemgroups;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -21,11 +22,12 @@ public class RogBlocks {
     public static final Block ROG_BLOCK = new Block(metal.strength(4f).requiresTool().velocityMultiplier(2f));
     public static final Block ROG_ORE_BLOCK = new OreBlock(stone.strength(4f).requiresTool(), UniformIntProvider.create(3, 7));
     public static final Block DEEPSLATE_ROG_ORE_BLOCK = new OreBlock(stone.strength(4f).requiresTool(), UniformIntProvider.create(3, 7));
-
+    public static final Block JUMP_BLOCK = new JumpBlock(metal.strength(2f).requiresTool());
     static {
         registerBlock("rog_block", ROG_BLOCK, RogItemgroups.ROG);
         registerBlock("rog_ore_block", ROG_ORE_BLOCK, RogItemgroups.ROG);
         registerBlock("deepslate_rog_ore_block", DEEPSLATE_ROG_ORE_BLOCK, RogItemgroups.ROG);
+        registerBlock("jump_block", JUMP_BLOCK, RogItemgroups.ROG);
     }
 
     private static void registerBlock(String name, Block block, ItemGroup tab){

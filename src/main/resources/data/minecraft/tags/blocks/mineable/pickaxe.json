@@ -3,6 +3,7 @@
   "values": [
     "rog:rog_block",
     "rog:rog_ore_block",
-    "rog:deepslate_rog_ore_block"
+    "rog:deepslate_rog_ore_block",
+    "rog:jump_block"
   ]
 }
